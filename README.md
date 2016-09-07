@@ -111,5 +111,6 @@ Once you are inside of a directory, it's useful to be able to interact with file
 | Open a file	| `open FILENAME` (windows: `start FILENAME`)	|
 | View text of a file | `less FILE_NAME`	|
 | See previous commands executed | `history` (also hit up arrow)	|
+| View Manual information for a command | `man COMMAND`	|
 
-To practice using basic command-line syntax, see [exercise-1](exercise-1).
+Don't hesitate to experiment with these commands, though I suggest making files to experiment moving/deleting/etc. Google is obviously a great resource, as is the `man` command for reading the manual (though that can be a bit dense). To practice using basic command-line syntax, see [exercise-1](exercise-1).
