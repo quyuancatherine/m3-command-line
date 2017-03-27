@@ -1,30 +1,16 @@
-# Module 2: Introduction to the Command Line
+# Introduction to the Command Line
 
-## Overview
 The command-line, or "terminal", is a simple text-based interface for providing instructions to your computer. Familiarizing yourself with a few pieces of simple syntax will allow you to efficiently perform a variety of tasks. In this course, we'll only scratch the surface of using the command-line, as it's primary purpose is to provide us with an interface for keeping track of our code. In this module, we'll cover elementary tasks, including navigating a file-system and managing files. Note, some commands may differ for Windows.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
+Helpful Resources:
 
-- [Resources](#resources)
-- [File System Structure](#file-system-structure)
-- [Accessing the Terminal](#accessing-the-terminal)
-- [Navigating the file system](#navigating-the-file-system)
-  - [Printing your Working Directory](#printing-your-working-directory)
-  - [Changing Directories](#changing-directories)
-  - [File Management](#file-management)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Resources
 - [Codecademny Exercises](https://www.codecademy.com/en/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command)
 - [Terminal Commands](http://www.lagmonster.org/docs/unix/intro-137.html)
 
 ## File System Structure
 Before exploring the syntax for navigating a file system, it's important to understand how it's organized. If you haven't considered it before, the files on your computer are organized into a hierarchical tree-like structure of folders (directories). Here is an example structure for a Mac machine:
 
-![directory structure tree diagram](imgs/directory_structure.png)
+![directory structure tree diagram](m3-imgs/directory_structure.png)
 _[source](http://korflab.ucdavis.edu/Unix_and_Perl/unix_and_perl_v3.0.html)_
 
 Given this structure, you can go further down a branch, or you can move up a level in the hierarchy. For example, to move from the `Mac` directory to the `Docs` directory, you would first have to go up to the `Volumes` directory, then into the `USB` directory, then into the `Unix...` directory in order to reach your desired set of files/folders.
@@ -32,13 +18,13 @@ Given this structure, you can go further down a branch, or you can move up a lev
 ## Accessing the Terminal
 Opening your command-line will differ based on your operating system, as well as your preferred terminal program (for Windows). On a Windows machine, you should be able to access the Git Bash program from your Start Menu or Desktop icon. On a Mac, the simplest way to open up the terminal is via the Spotlight Search. First, open the Spotlight Search by holding the `command` key and hitting the `spacebar`. This should bring up the following searchbar:
 
-![screenshot of mac spotlight search](imgs/spotlight.png)
+![screenshot of mac spotlight search](m3-imgs/spotlight.png)
 
 When the Spotlight Search opens, simply begin typing `terminal`, and hit `enter` when the `terminal` icon appears.
 
 Once you've opened the terminal, you'll have a simple (yet informative) text-based interface that should look like this:
 
-![screenshot of mac terminal](imgs/blank_terminal.png)
+![screenshot of mac terminal](m3-imgs/blank_terminal.png)
 
 Despite being terse, there's actually quite a bit of information in this image, including:
 
@@ -47,7 +33,7 @@ Despite being terse, there's actually quite a bit of information in this image, 
 - The current **user**, who will have a certain set of priviliages/abilities depending on the configuration of the machine
 - A **prompt** (i.e., the `$`), that indicates that the terminal is ready to accept text instructions
 
-![screenshot of mac terminal with labels](imgs/labeled_terminal.png)
+![screenshot of mac terminal with labels](m3-imgs/labeled_terminal.png)
 
 You should now feel comfortable with the idea of how files are organized, and be able to open your command-line. In the following section, we'll cover some introductory commands that you can begin to use.
 
@@ -57,7 +43,7 @@ The ability to provide instructions directly computer is quite powerful, so much
 ### Printing your Working Directory
 First, you need to know that you're actually operating at a specific location in your file structure when you're using the terminal. This makes sense, because if we want to do something like create a file, your terminal needs to know where to put it. In order to figure out where you are in your file system, you use the `pwd` command, which stands for _print working directory_:
 
-![print working directory screenshot](imgs/pwd_ss.png)
+![print working directory screenshot](m3-imgs/pwd_ss.png)
 
 Before we ran the `pwd` command, we knew that we were in a directory called `info-201`. However, we were unaware of where that directory lived within the context of the entire system. You'll frequently find yourself typing `pwd` to check where you are, and the results of that command is for your terminal to print your current location.
 
@@ -113,4 +99,4 @@ Once you are inside of a directory, it's useful to be able to interact with file
 | See previous commands executed | `history` (also hit up arrow)	|
 | View Manual information for a command | `man COMMAND`	|
 
-Don't hesitate to experiment with these commands, though I suggest making files to experiment moving/deleting/etc. Google is obviously a great resource, as is the `man` command for reading the manual (though that can be a bit dense). To practice using basic command-line syntax, see [exercise-1](exercise-1).
+Don't hesitate to experiment with these commands, though I suggest making files to experiment moving/deleting/etc. Google is obviously a great resource, as is the `man` command for reading the manual (though that can be a bit dense). To practice using basic command-line syntax, see [exercise-1](http://github.com/info201-s17/m3-command-line/tree/master/exercise-1).
