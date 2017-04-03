@@ -1,5 +1,7 @@
 # Introduction to the Command Line
 
+!!!
+
 The command-line, or "terminal", is a simple text-based interface for providing instructions to your computer. Familiarizing yourself with a few pieces of simple syntax will allow you to efficiently perform a variety of tasks. In this course, we'll only scratch the surface of using the command-line, as it's primary purpose is to provide us with an interface for keeping track of our code. In this module, we'll cover elementary tasks, including navigating a file-system and managing files. Note, some commands may differ for Windows.
 
 Helpful Resources:
